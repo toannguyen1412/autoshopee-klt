@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AutoShopee Kit</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h3>Chuyển định dạng Cookie</h2>
+    <div style=" margin-bottom: 10px;">
+      <textarea    style="width: 500px" rows="5" style="width:300px" id="input" placeholder="Nhập Cookie (key1=value1;key2=value2;key3=value3)"></textarea>
+    </div>
+    <div style=" margin-bottom: 10px;">
+        <input id="domain" style="width:300px" placeholder="Domain" value="https://shopee.vn" />
+    </div>
+    <div style=" margin-bottom: 10px;">
+      <button onclick="convert()">
+        Chuyển định dạng Cookie
+      </button>
+    </div>
+    <div style=" margin-bottom: 10px;">
+      <textarea rows="5"    style="width: 500px" id="result" placeholder="JSON Cookie" readonly></textarea>
+    </div>
+
+    <div style="margin-bottom: 10px;">
+      <input id="spc_f" style="width:300px" placeholder="SPC_F" readonly />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

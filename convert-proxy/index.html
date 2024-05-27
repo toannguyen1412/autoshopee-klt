@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AutoShopee Kit</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h2>AutoShopee Chuyển định dạng Proxy</h2>
+      <p>
+        <textarea
+          id="input"
+          placeholder="Proxy đầu vào mua từ các dịch vụ Proxy (mỗi Proxy một dòng)"
+          style="width: 500px"
+          rows="5"
+        ></textarea>
+      </p>
+      <p>
+        <b>Chuyển từ định dạng</b>
+        <select id="from">
+          <option value="type-1">IP:PORT:USERNAME:PASSWORD</option>
+          <option value="type-2">USERNAME:PASSWORD:IP:PORT</option>
+        </select>
+      </p>
+      <p>
+        <b>Sang định dạng</b>
+        <select id="to">
+          <option value="type-1">http://USERNAME:PASSWORD@IP:PORT</option>
+          <option value="type-2">socks5://USERNAME:PASSWORD@IP:PORT</option>
+        </select>
+      </p>
+      <p>
+        <button id="btn" style="width: 200px">
+          Chuyển đổi định dạng Proxy
+        </button>
+      </p>
+      <p>
+        <textarea
+          id="output"
+          placeholder="Proxy ShopManager, AutoShopee sử dụng"
+          style="width: 500px"
+          rows="5"
+          readonly
+        ></textarea>
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

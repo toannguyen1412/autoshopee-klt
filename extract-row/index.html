@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AutoShopee Kit</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h2>Chia dòng nhanh</h2>
+      <p>
+        <textarea
+          id="input"
+          style="width: 500px"
+          placeholder="Dữ liều đầu vào"
+          rows="5"
+        ></textarea>
+      </p>
+      <p>
+        <b style="margin: 5px">Từ</b>
+        <select id="from">
+          <option value="|">|</option>
+          <option value=",">,</option>
+          <option value=":">:</option>
+          <option value="-">-</option>
+          <option value=" ">Space</option>
+          <option value="">Tab</option>
+        </select>
+        <b style="margin: 5px">Sang</b>
+        <select id="to">
+          <option value="">Tab</option>
+          <option value="|">|</option>
+          <option value=",">,</option>
+          <option value="-">-</option>
+          <option value=":">:</option>
+          <option value=" ">Space</option>
+        </select>
+        <b style="margin: 5px">=</b>
+        <input id="convert" placeholder="ROW1-ROW2-ROW3" value="$1-$2-$3" />
+        <b style="margin: 5px">=</b>
+        <button id="btn">Chuyển đổi</button>
+      </p>
+      <hr />
+      <p>
+        <textarea
+          id="output"
+          style="width: 500px"
+          placeholder="Kết quả 2"
+          rows="5"
+          readonly
+        ></textarea>
+      </p>
+      <p>
+        <textarea
+          id="extract"
+          style="width: 500px"
+          placeholder="Kết quả 1"
+          rows="5"
+          readonly
+        ></textarea>
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
